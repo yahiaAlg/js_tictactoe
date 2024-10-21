@@ -84,7 +84,7 @@ function handleClick(event) {
   const rect = canvas.getBoundingClientRect();
   const x = event.clientX - rect.left;
   const y = event.clientY - rect.top;
-
+  console.log(x, y);
   const col = Math.floor(x / 100);
   const row = Math.floor(y / 100);
   const index = row * 3 + col;
